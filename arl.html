@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object-Based Scene Recognition</title>
+        <!-- Needed? type="image/ico" -->
+        <link rel="icon" href="media/freddy.png">
+        <link rel="stylesheet" href="css/projectstyles.css">
+    </head>
+    <!-- Are these next 2 lines necessary? -->
+    <body>
+        <nav class="back-arrow">
+            <ul>
+                <li><a href="/#top"><img src="media/icons/back.png" /></a></li>
+            </ul>
+        </nav>
+        <nav class="navTransparent">
+            <ul>
+                <li><a href="/#about">About Me</a></li>
+                <li><a href="/#work">My Work</a></li>
+                <li><a href="/#art">Art</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <p><a href="/#top">ML</a></p>
+        </nav>
+        <div class="body-container">
+            <div class="showcase-container">
+                <ul class="showcase-content flexbox">
+                    <li class="flex-info"><h1>Object-Based Scene Recognition</h1></li>
+                    <li class="flex-info">
+                        <p>A scene recognition model using associative logic and Naive Bayes classification.</p>
+                    </li>
+                    <li class="flex-info">
+                        <img src="media/arl-showcase.jpg" />
+                    </li>
+                    <li class="flex-info">
+                        <p>During my sumer internship at the U.S. Army Research Lab's Computational and Information Sciences Directorate, I worked on a deep learning model that, when given an image, suggests potential locations based on the objects within it. My work this summer focused on the beginning and end stages of this model.</p>
+                    </li>
+                    <li class="flex-info">
+                        <h2>01. Overview/Approach</h2>
+                    </li>
+                    <li class="flex-info split-mixed">
+                        <div>
+                            <ol>
+                            <li>For an image, implement a library of pre-trained object recognition models to identify a set of objects and their probability of correct detection (“confidence score”).
+                            <li>Forward high confidence detected objects to a vector reasoning engine to generate a knowledge base of objects associated with the detected object labels.</li>
+                            <li>Use this knowledge base to confirm objects in the initial list of high-confidence objects.</li>
+                            <li>For objects in the knowledge base not part of the initial object list, use an additional set of object detection models and add new objects to the object list if objects are found. The higher expectation lowers required confidence score.</li>
+                            <li>Train a Naïve Bayes classifier on the SUN2012 database’s scene and object annotations to generate a list of possible scenes given a set of objects.</li>
+                            <li>Input the larger set of detected objects into the classifier to output possible scene categories.</li>
+                        </ol>
+                        </div>
+                        <div><img src="media/diagram.jpg" class="dropshadow" /></div>
+                    </li>
+                    <li class="flex-info">
+                        <h2>02. Object Detection Models</h2>
+                        <p>For my internship, one of the components of the model that I focused on was implementing a set of various deep learning object-detection models and formatting the data to be fed into the vector-based reasoning engine. I ran a set of images on three pre-trained TensorFlow models: Faster RCNN Inception Resnet (trained on the OpenImages database), Mask RCNN Inception Resnet (trained on the CoCo database), and SSD MobileNet (trained on the CoCo database).</p>
+                    </li>
+                    <li class="flex-info split models">
+                        <div><img class="dropshadow" src="media/ADE_train_00004237.jpg" /><p>Sample Image</p></div>
+                        <div><img class="dropshadow" src="media/model1.jpg" /><p>Faster RCNN Inception Resnet (OpenImages)</p></div>
+                        <div><img class="dropshadow" src="media/model2.jpg" /><p>Mask RCNN Inception Resnet (CoCo)</p></div>
+                        <div><img class="dropshadow" src="media/model3.jpg" /><p>SSD MobileNet (CoCo)</p></div>
+                    </li>
+                    <li class="flex-info">
+                        <p>Each model had varying results, but in general, I found the Mask RCNN model to be the most accurate.</p>
+                    </li>
+                    <li class="flex-info split-mixed">
+                        <div>
+                            <img src="media/data.jpg" class="dropshadow" />
+                        </div>
+                        <div><p>Object information was outputted as a triplet: object label, confidence score, and object bounding box location.</p></div>
+                    </li>
+                    <li class="flex-info">
+                        <h2>03. Naive Bayes Classifier</h2>
+                    </li>
+                    <li class="flex-info split-mixed">
+                        <div><p>My next area of focus was using the expanded set of objects provided by the vector reasoning engine to predict an image's scene category. To do this, I used a Naive Bayes machine learning agorithm and used annotations from MIT/Princeton's SUN database to train my model.</p>
+                        <br />
+                        <p>Based on the SUN database's hierarchical nature, I trained the model to predict scene categories based on both broad categories (e.g. indoor, outdoor man-made, outdoor natural) and specific categories (anechoic chamber, assembly line, etc.) I found that the model was very accurate for the broader categories, with a testing accuracy at 90.48%, but less accurate for more specific categories (testing acuracy of 43.17%).</p></div>
+                        <div><img src="media/hierarchy.jpg" class="dropshadow" /></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <a href="mailto:mxliu@andrew.cmu.edu" target="_blank"><img src="media/icons/mailicon.png"></a>
+            <a href="https://www.linkedin.com/in/michelle-l-51aa95187/" target="_blank"><img src="media/icons/linkedin.png"></a>
+            <a href="https://www.instagram.com/michellee.liu/" target="_blank"><img src="media/icons/instagram.png"></a>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/mobilescript.js"></script>
+    </body>
+</html>

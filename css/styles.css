@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Poppins:wght@500;600;700&display=swap');
+
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    /* Gross and dirty way to fix the bug that causes a sliver of pixels to the right (causing horizontal scroll bar to appear) */
+    /* overflow-x: hidden; */
+}
+ul  {
+    list-style-type: none;
+}
+.background {
+    /* Weird aspect rations ruin this img */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+a   {
+    color: inherit;
+}
+.anchor {
+}
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+nav > p {
+    font-size: 3.7vh;
+    right: 4vw;
+    /* Next 5 lines center "HocoHacks" in the nav */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+nav > ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0vh 3vw;
+}
+nav > ul > li {
+    border: 1px solid transparent;
+    border-radius: 1vh;
+    float: left;
+    padding: 1vh 1.2vw;
+    margin: 0;
+}
+nav > ul > li:hover {
+    border-radius: 1.5vh;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+nav a   {
+    text-decoration: none;
+}
+nav > ul > li > a {
+    font-size: 2.2vh;
+}
+.navTransparent {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background-color: transparent;
+}
+.navTransparent > p  {
+    font-family: 'Poppins', sans-serif;
+}
+.navTransparent > ul > li:hover {
+    border: 1px solid white;
+}
+.navTransparent > ul > li > a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: white;
+    font-size: 2.5vh;
+}
+.navTransparent > p {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: white;
+}
+.navColor {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background-color: #084887;
+    z-index: 99;
+}
+.navColor > ul > li:hover {
+    border: 1px solid white;
+}
+.navColor > ul > li > a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: white;
+}
+.navColor > p {
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: white;
+}
+footer {
+    margin: 3vh 2vw;
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+footer > a > img {
+    height: auto;
+    width: 6vh;
+    margin: 0vh 0.2vw;
+}
+.flexbox    {
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.flex-img   {
+    width: 40%;
+}
+.flex-info  {
+    width: 85%;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    width: 100%;
+	background: linear-gradient(-30deg, rgba(245,138,7,1) 11%, rgba(123,104,73,1) 30%, rgba(76,91,98,1) 38%, rgba(39,81,118,1) 45%, rgba(27,78,124,1) 49%, rgba(8,72,135,1) 54%, rgba(23,78,132,1) 59%, rgba(35,83,130,1) 63%, rgba(57,92,125,1) 72%, rgba(132,123,109,1) 85%, rgba(249,171,85,1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.logo-normal {
+    width: 100%;
+    float: right;
+}
+header p {
+    font-size: 5.7vh;
+    color: white;
+}
+
+.main-container {
+    padding-top: 3vh;
+    height: 60vh;
+    width: 85%;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+.body-container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 5vh;
+}
+p {
+    font-size: 2.75vh;
+}
+h2  {
+    font-size: 3.5vh;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: .5vw;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.about-content  {
+    width: 100%;
+    display: flex;
+    margin: 0px auto;
+    flex-direction: column;
+}
+.flex-info p, h1 {
+    margin: 1.6vh 0vh;
+}
+.flex-info ul {
+    list-style-type: disc;
+    font-size: 2.75vh;
+}
+#about  {
+    padding: 5vh 0vh;
+}
+.shrink:hover
+{
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+.projects {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.projects li {
+    list-style-type: none;
+    width: 45%;
+    margin: .5vw 1vw;
+}
+.projects > li > a > img {
+    height: auto;
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+.projects a {
+    text-decoration: none;
+}
+.projects p, h2 {
+    margin: .5vh;
+}
+.projects h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 .5vh;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 .5vh;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.spacing5   {
+    margin-top: 5vh;
+}
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+}
+@media only screen and (max-width : 767px){
+    nav {
+        display: none;
+    }
+    header p    {
+        font-size: 5vh;
+    }
+    .projects   {
+        flex-direction: column;
+        padding-left: 0vh;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    .projects li {
+        list-style-type: none;
+        width: 95%;
+        margin: 2vw 0vw;
+    }
+    header {
+        width: 100%;
+        background: linear-gradient(-45deg, #909CC2, #F58A07, #084887, #F9AB55);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
+}
