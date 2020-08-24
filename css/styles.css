@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Poppins:wght@500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 html {
     height: 100%;
@@ -34,8 +35,7 @@ nav {
 }
 nav > p {
     font-size: 3.7vh;
-    right: 4vw;
-    /* Next 5 lines center "HocoHacks" in the nav */
+    left: 4vw;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -46,13 +46,14 @@ nav > ul {
     display: inline-block;
     list-style-type: none;
     padding: 0vh 3vw;
+    float: right;
 }
 nav > ul > li {
     border: 1px solid transparent;
     border-radius: 1vh;
-    float: left;
     padding: 1vh 1.2vw;
     margin: 0;
+    display: inline-block;
 }
 nav > ul > li:hover {
     border-radius: 1.5vh;
@@ -167,8 +168,23 @@ header {
     float: right;
 }
 header p {
-    font-size: 5.7vh;
+    font-size: 8vh;
     color: white;
+    width: 100%;
+    font-family: 'Anonymous Pro', sans-serif;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 3vh;
+}
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 .main-container {
     padding-top: 3vh;
@@ -308,7 +324,6 @@ tr:nth-child(even) {
     }
     header {
         width: 100%;
-        background: linear-gradient(-45deg, #909CC2, #F58A07, #084887, #F9AB55);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
         font-family: 'Poppins', sans-serif;

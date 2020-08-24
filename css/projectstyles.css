@@ -34,8 +34,7 @@ nav {
 }
 nav > p {
     font-size: 3.7vh;
-    right: 4vw;
-    /* Next 5 lines center "HocoHacks" in the nav */
+    left: 4vw;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -46,6 +45,7 @@ nav > ul {
     display: inline-block;
     list-style-type: none;
     padding: 0vh 3vw;
+    float: right;
 }
 nav > ul > li {
     border: 1px solid transparent;
@@ -53,6 +53,7 @@ nav > ul > li {
     float: left;
     padding: 1vh 1.2vw;
     margin: 0;
+    display: inline-block;
 }
 nav > ul > li:hover {
     border-radius: 1.5vh;
