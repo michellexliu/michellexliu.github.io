@@ -167,8 +167,12 @@ header {
     width: 100%;
     float: right;
 }
-header p {
+.hello  {
     font-size: 8vh;
+    color: white;
+} 
+.animatedtext {
+    font-size: 4vh;
     color: white;
     width: 100%;
     font-family: 'Anonymous Pro', sans-serif;

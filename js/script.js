@@ -25,7 +25,7 @@ $(document).ready(function (){
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "Hello, my name is Michelle."];
+  var dataText = [ "Programmer.", "Designer.", "Innovator."];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     // chekc if text isn't finished yet
     if (i < (text.length)) {
       // add next character to h1
-     document.querySelector("header p").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+     document.querySelector(".animatedtext").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
 
       // wait for a while and call this function again for next character
       setTimeout(function() {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     // text finished, call callback if there is a callback function
     else if (typeof fnCallback == 'function') {
       // call callback after timeout
-      setTimeout(fnCallback, 700);
+      setTimeout(fnCallback, 800);
     }
   }
   // start a typewriter animation for a text in the dataText array
