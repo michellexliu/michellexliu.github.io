@@ -6,6 +6,7 @@ html {
 body {
     font-family: 'Heebo', sans-serif;
     margin: 0;
+    color: #303030;
     /* Gross and dirty way to fix the bug that causes a sliver of pixels to the right (causing horizontal scroll bar to appear) */
     /* overflow-x: hidden; */
 }
@@ -229,6 +230,11 @@ tr:nth-child(even) {
     text-decoration: none;
     color: #F58A07;
     font-size: 2.75vh;
+    transition: border-bottom .2s ease;
+    padding-bottom: 1px;
+}
+.showcase-link:hover  {
+    border-bottom: 3px solid #F58A07;
 }
 .flex-info p, h1 {
     margin: .5vh 0vh;

@@ -6,6 +6,7 @@ html {
 body {
     font-family: 'Heebo', sans-serif;
     margin: 0;
+    color: #303030;
     /* Gross and dirty way to fix the bug that causes a sliver of pixels to the right (causing horizontal scroll bar to appear) */
     /* overflow-x: hidden; */
 }
