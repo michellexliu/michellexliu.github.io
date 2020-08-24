@@ -147,7 +147,7 @@ header {
     width: 100%;
 	  background: linear-gradient(139deg, rgba(14,85,144,1) 5%, rgba(34,129,200,1) 31%, rgba(57,169,219,1) 47%, rgba(60,177,218,1) 70%, rgba(114,216,240,1) 90%, rgba(141,222,241,1) 98%);
 	  background-size: 400% 400%;
-	  animation: gradient 20s ease infinite;
+	  animation: gradient 12s ease infinite;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
