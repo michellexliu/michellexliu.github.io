@@ -138,7 +138,7 @@ footer > a > img {
     width: 40%;
 }
 .flex-info  {
-    width: 85%;
+    width: 80%;
     margin: 0px;
     padding: 0px;
 }
@@ -172,7 +172,7 @@ header p {
 .main-container {
     padding-top: 3vh;
     height: 60vh;
-    width: 85%;
+    width: 80%;
     align-items: flex-end;
     align-content: flex-end;
     justify-content: flex-start;
@@ -229,15 +229,16 @@ tr:nth-child(even) {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 80%;
+    padding: 0px;
 }
 .projects li {
     list-style-type: none;
-    width: 45%;
-    margin: .5vw 1vw;
+    width: 48%;
+    margin: 1vw 0px;
 }
 .projects > li > a > img {
     height: auto;
@@ -264,11 +265,13 @@ tr:nth-child(even) {
 }
 .gallery    {
     padding: 0px;
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 20%;
-  max-width: 20%;
+  max-width: 25%;
   padding: 0 .5vh;
 }
 
@@ -297,10 +300,6 @@ tr:nth-child(even) {
         align-items: center;
         text-align: center;
     }
-    .column {
-        flex: 50%;
-        max-width: 50%;
-      }
     .projects li {
         list-style-type: none;
         width: 95%;
@@ -313,5 +312,13 @@ tr:nth-child(even) {
         animation: gradient 15s ease infinite;
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
+    }
+    .gallery    {
+        flex-direction: column;
+        width: 80%;
+        margin: 0px auto;
+    }
+    .column {
+        max-width: 100%;
     }
 }
