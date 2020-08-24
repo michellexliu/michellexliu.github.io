@@ -79,26 +79,26 @@ nav > ul > li > a {
     font-family: 'Poppins', sans-serif;
 }
 .navTransparent > ul > li:hover {
-    border: 1px solid #084887;
+    border: 1px solid #1c77c3;
 }
 .navTransparent > ul > li > a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: #084887;
+    color: #1c77c3;
     font-size: 2.5vh;
 }
 .navTransparent > p {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: #084887;
+    color: #1c77c3;
 }
 .navColor {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    background-color: #084887;
+    background-color: #1c77c3;
     z-index: 99;
 }
 .navColor > ul > li:hover {

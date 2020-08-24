@@ -95,7 +95,7 @@ nav > ul > li > a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    background-color: #084887;
+    background-color: #1c77c3;
     z-index: 99;
 }
 .navColor > ul > li:hover {
@@ -145,9 +145,9 @@ footer > a > img {
 }
 header {
     width: 100%;
-	  background: linear-gradient(-30deg, rgba(245,138,7,1) 11%, rgba(123,104,73,1) 30%, rgba(76,91,98,1) 38%, rgba(39,81,118,1) 45%, rgba(27,78,124,1) 49%, rgba(8,72,135,1) 54%, rgba(23,78,132,1) 59%, rgba(35,83,130,1) 63%, rgba(57,92,125,1) 72%, rgba(132,123,109,1) 85%, rgba(249,171,85,1) 100%);
+	  background: linear-gradient(139deg, rgba(14,85,144,1) 5%, rgba(34,129,200,1) 31%, rgba(57,169,219,1) 47%, rgba(60,177,218,1) 70%, rgba(114,216,240,1) 90%, rgba(141,222,241,1) 98%);
 	  background-size: 400% 400%;
-	  animation: gradient 25s ease infinite;
+	  animation: gradient 20s ease infinite;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
