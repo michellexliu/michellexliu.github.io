@@ -311,6 +311,7 @@ tr:nth-child(even) {
     }
     .back-arrow  {
         display: block;
+        padding: 2vh;
     }
     header p    {
         font-size: 5vh;
