@@ -176,19 +176,18 @@ header {
     float: right;
 }
 .hello  {
-    font-size: 8vh;
+    font-size: 7vh;
     color: white;
+    padding-bottom: 3vh;
 } 
 .animatedtext {
-    font-size: 4vh;
     color: white;
     width: 100%;
-    font-family: 'Anonymous Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
     position: relative;
     margin: 0 auto;
-    padding-bottom: 3vh;
 }
-span {
+.cursor {
   border-right: .05em solid;
   animation: caret 1s steps(1) infinite;
 }
