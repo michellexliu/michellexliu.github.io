@@ -27,6 +27,9 @@ h3  {
     width: 100%;
     z-index: -1;
 }
+.dropshadow {
+    box-shadow: 0 14px 28px rgba(27, 33, 48,0.06), 0 10px 10px rgba(27, 33, 48,0.02);
+}
 a   {
     color: inherit;
 }
@@ -244,67 +247,42 @@ tr:nth-child(even) {
 #about  {
     padding: 5vh 0vh;
 }
+
 .accordion {
-    margin-top: 0vh;
-    background-color: #f9ab55;
-    color: #212121;
-    cursor: pointer;
-    padding: 2vh;
-    border-radius: 15px;
-    width: auto;
-    border: none;
-    text-align: left;
-    font-size: 2.75vh;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-    font-weight:500;
-}
-.active, .accordion:hover {
-    background-color: #f58a07;
-    color: white;
-}
-.accordion:after {
-    content: '\002B';
-    color: #212121;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-.active:after{
-    content: "\2212";
-    color: #ffffff;
-}
-.faq {
-	display: block;
-    margin: 0%;
-    width: 100%;
-}
-.panel{
+    color: #f9ab55;
     background-color: white;
-    max-height: 0;
-    font-size: 1.5vw;
-    padding: .5vw;
-    overflow: hidden;
-    -webkit-transition: max-height 0.2s ease-out;
-    -o-transition: max-height 0.2s ease-out;
-    transition: max-height 0.2s ease-out;
-    font-weight:300;
-}
-.panel ul   {
-    margin: 2vh 0;
-}
-.panel a:link{
-	text-decoration: none;
-	color: #F8AC3C;
-}
-.panel a:visited{
-	color: #F8AC3C;
-}
-.panel a:hover{
-	text-decoration: underline;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: block;
 }
+
+/* Default to hidden */
+.faq-panel {
+    background-color: white;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.faq-panel ul {
+    padding: 1vh 3.5vh;
+    padding-right: 1vh;
+}
+.faq-accordion {
+    border: 1px solid #f9ab55;
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    margin: 1em 0;
+}
+
 .shrink:hover
 {
     -webkit-transform: scale(0.95);
