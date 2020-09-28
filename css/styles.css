@@ -411,13 +411,31 @@ h3 {
 	margin-top: 5vh;
 }
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
+	p,
+	.flex-info ul {
+		font-size: 2.25vh;
+	}
+
+	.hello {
+		font-size: 5vh;
+	}
+	.accordion {
+		font-size: 2.5vh;
+	}
 }
 @media only screen and (max-width: 767px) {
 	nav {
 		display: none;
 	}
+	p,
+	.flex-info ul {
+		font-size: 2.25vh;
+	}
 	.hello {
 		font-size: 5vh;
+	}
+	.accordion {
+		font-size: 2.5vh;
 	}
 	.projects {
 		flex-direction: column;
