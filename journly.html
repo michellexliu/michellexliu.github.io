@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuHacks</title>
+    <title>Journly</title>
     <!-- Needed? type="image/ico" -->
 
     <link rel="stylesheet" href="css/projectstyles.css" />
@@ -35,68 +35,68 @@
     <div class="body-container">
       <div class="showcase-container">
         <ul class="showcase-content flexbox">
-          <li class="flex-info"><h1>QuHacks</h1></li>
+          <li class="flex-info"><h1>Journly</h1></li>
           <li class="flex-info">
-            <p>Hackathon by students, for students.</p>
+            <p>More than just a journal.</p>
             <a
-              href="http://www.quhacks.tech/"
+              href="https://journlyapp.herokuapp.com/"
               class="showcase-link"
               target="_blank"
               >> Go to website</a
             >
+            <br />
+            <a
+              href="https://github.com/michellexliu/journly"
+              class="showcase-link"
+              target="_blank"
+              >> GitHub Repository</a
+            >
           </li>
           <li class="flex-info">
-            <img src="media/quhacks-showcase.png" />
+            <img src="media/journly-showcase.jpg" />
           </li>
           <li class="flex-info">
             <p>
-              QuHacks is a Maryland-based organization that hosts hackathons for
-              middle to high school students with the goal of making coding more
-              accessible to the youth. As the web developer and a member of the
-              organizing team, I managed the design and development of the
-              website. I also participated in the event-planning, including
-              reaching out to corporate sponsors, coordinating event logistics,
-              and running a Python workshop.
+              Journly is a web application that allows users to create daily
+              journal entries and then uses sentiment analysis to produce
+              insights about these entries over time. This project was created
+              for Technica 2020, the world's largest all-women and nonbinary
+              hackathon!
             </p>
           </li>
           <li class="flex-info">
-            <h2>Layout Design</h2>
-            <p>
-              As the QuHacks website designer, I was responsible for rebranding
-              the organization for its 2019 event. The older version of the
-              website featured a multi-page layout with a dropdown menu. In
-              order to create a more streamlined user experience, I made the
-              layout single-paged and added an inline menu with anchors leading
-              to the different page sections.
-            </p>
+            <h2>Sentiment Analysis</h2>
           </li>
-          <li class="flex-info split">
+          <li class="flex-info split-mixed">
+            <div><img class="dropshadow" src="media/journly-home.jpg" /></div>
             <div>
-              <img src="media/quhacks-homepage-before.jpg" />
-              <p>Before</p>
-            </div>
-            <div>
-              <img src="media/quhacks-homepage-after.jpg" />
-              <p>After</p>
+              <p>
+                When a user publishes a new entry, Journly will assign salient
+                words a normalized value ranging from -1 to 1, with -1
+                corresponding to an entry that is strongly negative, while 1
+                corresponds to an entry that is strongly positive. Then, the
+                entry as a whole is given an overall "polarity" score based on
+                these individual values and given an asessment as very negative,
+                negative, slightly negative, neutral, slightly positive,
+                positive, or very positive.
+              </p>
             </div>
           </li>
           <li class="flex-info">
-            <h2>Responsive Mobile Layout</h2>
-            <p>
-              In order to make the website better-suited for smaller devices
-              such as phones, I implemented a dynamic layout to respond to
-              different screen dimensions.
-            </p>
+            <h2>Insights</h2>
           </li>
-          <li class="flex-info split mobile">
+          <li class="flex-info split-mixed">
             <div>
-              <img src="media/quhacks-mobile-before.png" />
-              <p>Before</p>
+              <p>
+                Journly also features an "insights" section, where a user can
+                see different trends and data points from thier entries over
+                time. Based on the sentiment scores from all their posts,
+                Journly will show a user's "average mood," most positive entry,
+                most negative entry, and a chart that plots how the user's mood
+                has changed over time.
+              </p>
             </div>
-            <div>
-              <img src="media/quhacks-mobile-after.png" />
-              <p>After</p>
-            </div>
+            <div><img class="dropshadow" src="media/insights.jpg" /></div>
           </li>
         </ul>
       </div>
