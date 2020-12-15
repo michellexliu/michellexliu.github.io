@@ -1,6 +1,3 @@
-.navTransparent > .nav-main > ul > li:hover {
-  border: 1px solid #1c77c3;
-}
 .navTransparent > .nav-main > ul > li > a {
   color: #1c77c3;
 }

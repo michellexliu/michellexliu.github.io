@@ -62,19 +62,11 @@ nav {
   float: right;
 }
 .nav-main > ul > li {
-  border: 1px solid transparent;
-  border-radius: 1vh;
   padding: 1vh;
   padding-right: 0vw;
   padding-left: 2.5vw;
   margin: 0;
   display: inline-block;
-}
-.nav-main > ul > li:hover {
-  border-radius: 1.5vh;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
 }
 .nav-main a {
   text-decoration: none;
@@ -90,9 +82,6 @@ nav {
 }
 .navTransparent > .nav-main > p {
   font-family: "Helvetica Neue", sans-serif;
-}
-.navTransparent > .nav-main > ul > li:hover {
-  border: 1px solid white;
 }
 .navTransparent > .nav-main > ul > li > a {
   -webkit-transition-duration: 0.5s;
@@ -112,9 +101,6 @@ nav {
   transition-duration: 0.5s;
   background-color: #1c77c3;
   z-index: 99;
-}
-.navColor > .nav-main > ul > li:hover {
-  border: 1px solid white;
 }
 .navColor > .nav-main > ul > li > a {
   -webkit-transition-duration: 0.5s;
