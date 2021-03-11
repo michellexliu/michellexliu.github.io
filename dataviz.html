@@ -17,7 +17,7 @@
     <div id="mapid"></div>
    </div>
    <div class="col">
-   <h3>Pothole and Buggy Wheel Length</h3>
+   <h3>Pothole and Buggy Wheel, Proportional to Width</h3>
     <div id="my_dataviz"></div>
    </div>
 </div>
@@ -110,11 +110,11 @@ var svg = d3.select("#my_dataviz")
 
 // The scale you use for bubble size
 var size = d3.scaleSqrt()
-  .domain([1, 100])  // What's in the data, let's say it is percentage
+  .domain([1, 12])  // What's in the data, let's say it is percentage
   .range([1, 100])  // Size in pixel
 
 // Add legend: circles
-var valuesToShow = [[58, "Chute Pothole, Buggy Wheel"], [71, "Westinghouse Pothole"], [100, "Phipps Pothole"]]
+var valuesToShow = [[1.5, "Chute Pothole, Buggy Wheel"], [9.2, "Westinghouse Pothole"], [12, "Phipps Pothole"]]
 var xCircle = 100
 var xLabel = 250
 var yCircle = 330
