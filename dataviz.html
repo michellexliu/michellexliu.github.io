@@ -1,0 +1,141 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+<meta charset="utf-8">
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Create an element where the map will take place -->
+<div class="container">
+    <div id="mapid"></div>
+    <div id="my_dataviz"></div>
+</div>
+
+<style>
+#mapid { height: 100vh; width: 70vw;}
+.container { width: 100%; display: flex;}
+</style>
+
+
+<script>
+
+// Initialize the map
+// [50, -0.1] are the latitude and longitude
+// 4 is the zoom
+// mapid is the id of the div where the map will appear
+var mymap = L
+  .map('mapid')
+  .setView([40.4400, -79.9455], 18);
+    
+var phipps = L.circle([40.439513, -79.946721], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 15
+}).addTo(mymap);
+    
+var pond = L.circle([40.439726,-79.943489], {
+    color: 'blue',
+    fillColor: '#30f',
+    fillOpacity: 0.5,
+    radius: 10.65
+}).addTo(mymap);
+
+var chute = L.circle([40.440799,-79.948154], {
+    color: 'green',
+    fillColor: '#3f0',
+    fillOpacity: 0.5,
+    radius: 8.7495
+}).addTo(mymap);
+
+    
+var outline = L.polygon([
+    [40.441598,-79.941618],
+    [40.440448,-79.942170],
+    [40.441489,-79.947068],
+    [40.441478,-79.947255],
+    [40.440815,-79.948191],
+    [40.440237,-79.946975],
+    [40.439689,-79.946750],
+    [40.438938,-79.946503],
+    [40.438685,-79.945751],
+    [40.438800,-79.944848],
+    [40.438963,-79.944334],
+    [40.439142,-79.944066],
+    [40.439999,-79.943242],
+    [40.440186,-79.942630],
+    [40.440170,-79.942260]
+    
+]).addTo(mymap);
+// Add a tile to the map = a background. Comes from OpenStreetmap
+
+phipps.bindPopup('<b>Width: </b> 12" <br /> <b>Length: </b> 12" <br /><b>Depth: </b> 4"');
+pond.bindPopup('<b>Width: </b> 9.2" <br /> <b>Length: </b> 8.6" <br /><b>Depth: </b> 5"');
+chute.bindPopup('<b>Width: </b> 1.5" <br /> <b>Length: </b> 7" <br /><b>Depth: </b> 4"');
+
+L.tileLayer(
+    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+    maxZoom: 20,
+}).addTo(mymap);
+    
+
+// append the svg object to the body of the page
+var height = 340
+var width = 380
+var svg = d3.select("#my_dataviz")
+  .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+
+// The scale you use for bubble size
+var size = d3.scaleSqrt()
+  .domain([1, 100])  // What's in the data, let's say it is percentage
+  .range([1, 100])  // Size in pixel
+
+// Add legend: circles
+var valuesToShow = [[58, "Chute Pothole, Buggy Wheel"], [71, "Westinghouse Pothole"], [100, "Phipps Pothole"]]
+var xCircle = 100
+var xLabel = 250
+var yCircle = 330
+svg
+  .selectAll("legend")
+  .data(valuesToShow)
+  .enter()
+  .append("circle")
+    .attr("cx", xCircle)
+    .attr("cy", function(d){ return yCircle - size(d[0]) } )
+    .attr("r", function(d){ return size(d[0]) })
+    .style("fill", "none")
+    .attr("stroke", "black")
+
+// Add legend: segments
+svg
+  .selectAll("legend")
+  .data(valuesToShow)
+  .enter()
+  .append("line")
+    .attr('x1', function(d){ return xCircle + size(d[0]) } )
+    .attr('x2', xLabel)
+    .attr('y1', function(d){ return yCircle - size(d[0]) } )
+    .attr('y2', function(d){ return yCircle - size(d[0]) } )
+    .attr('stroke', 'black')
+    .style('stroke-dasharray', ('2,2'))
+
+// Add legend: labels
+svg
+  .selectAll("legend")
+  .data(valuesToShow)
+  .enter()
+  .append("text")
+    .attr('x', xLabel)
+    .attr('y', function(d){ return yCircle - size(d[0]) } )
+    .text( function(d){ return d[1] } )
+    .style("font-size", 10)
+    .attr('alignment-baseline', 'middle')
+
+
+</script>
