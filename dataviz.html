@@ -10,13 +10,30 @@
 
 <!-- Create an element where the map will take place -->
 <div class="container">
+   <div class="col">
+    <h3>Pothole Locations on Buggy Path</h3>
+       <h4>Click on the circles to see pothole dimensions</h4>
+
     <div id="mapid"></div>
+   </div>
+   <div class="col">
+   <h3>Pothole and Buggy Wheel Length</h3>
     <div id="my_dataviz"></div>
+   </div>
 </div>
 
 <style>
-#mapid { height: 100vh; width: 70vw;}
+#mapid { height: 80vh; width: 70vw;}
 .container { width: 100%; display: flex;}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+    body {
+        text-align: center;
+        font-family: 'Helvetica Neue', 'sans-serif';
+        font-weight: 400;
+    }
 </style>
 
 
