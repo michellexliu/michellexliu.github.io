@@ -26,14 +26,13 @@ h3 {
   z-index: -1;
 }
 .dropshadow {
-  box-shadow: 0 14px 28px rgba(27, 33, 48, 0.06),
-    0 10px 10px rgba(27, 33, 48, 0.02);
+  box-shadow: -1px 6px 20px 0 silver;
 }
 a {
   color: inherit;
 }
 nav {
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   top: 0;
   width: 100%;
@@ -46,14 +45,19 @@ nav {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  /* display: flex;
+  justify-content: space-between; */
 }
 .nav-main > p {
   font-size: 175%;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  display: none;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* -ms-transform: translateY(-50%); */
+  /* transform: translateY(-50%); */
 }
 .nav-main > ul {
   display: inline-block;
@@ -81,19 +85,20 @@ nav {
   background-color: transparent;
 }
 .navTransparent > .nav-main > p {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  /* font-weight: 600; */
 }
 .navTransparent > .nav-main > ul > li > a {
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  color: white;
+  /* color: white; */
 }
 .navTransparent > .nav-main > p {
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  color: white;
+  /* color: white; */
 }
 .navColor {
   -webkit-transition-duration: 0.5s;
@@ -106,14 +111,14 @@ nav {
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  color: white;
+  /* color: white; */
 }
 .navColor > .nav-main > p {
   font-family: "Helvetica Neue", sans-serif;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  color: white;
+  /* color: white; */
 }
 footer {
   margin: 3vh 2vw;
@@ -147,7 +152,7 @@ footer > a > img {
 
 .main-container {
   padding-top: 3vh;
-  height: 60vh;
+  /* height: 60vh; */
   width: 80%;
   align-items: flex-end;
   align-content: flex-end;

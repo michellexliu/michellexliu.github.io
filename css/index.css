@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     139deg,
     rgba(14, 85, 144, 1) 5%,
     rgba(34, 129, 200, 1) 31%,
@@ -8,7 +8,7 @@ header {
     rgba(60, 177, 218, 1) 70%,
     rgba(114, 216, 240, 1) 90%,
     rgba(141, 222, 241, 1) 98%
-  );
+  ); */
   background-size: 400% 400%;
   animation: gradient 12s ease infinite;
   font-family: "Helvetica Neue", sans-serif;
@@ -34,11 +34,11 @@ header {
 }
 .hello {
   font-size: 250%;
-  color: white;
+  /* color: white; */
 }
 .pre-animation {
   font-size: 250%;
-  color: white;
+  /* color: white; */
   margin-bottom: 5vh;
   width: 100%;
   font-family: "Anonymous Pro", sans-serif;
@@ -57,7 +57,7 @@ header {
 }
 .main-container {
   padding-top: 3vh;
-  height: 60vh;
+  /* height: 60vh; */
   width: 80%;
   align-items: flex-end;
   align-content: flex-end;

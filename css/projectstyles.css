@@ -1,9 +1,3 @@
-.navTransparent > .nav-main > ul > li > a {
-  color: #1c77c3;
-}
-.navTransparent > .nav-main > p {
-  color: #1c77c3;
-}
 .back-arrow {
   display: none;
 }
@@ -34,7 +28,7 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 .dropshadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: -1px 6px 20px 0 silver; 
 }
 .showcase-content {
   width: 80%;
