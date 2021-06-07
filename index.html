@@ -1,204 +1,80 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michelle Liu</title>
-    <!-- Needed? type="image/ico" -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <nav class="navTransparent nav-wrapper">
-      <div class="nav-main">
-        <p><a href="#top">Michelle Liu</a></p>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#work">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michelle Liu</title>
+  <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+  <div class="site-container">
+    <div class="about">
+      <h1>Michelle Liu</h1>
+      <div class="intro">
+        I'm a second-year Information Systems and Computer Science student at Carnegie Mellon University. I love solving challenging problems with code and building fun and creative web tools. This summer, I'm a Civic Innovation Corps member at the NYC Mayor's Office of the CTO, working on frontend development.
       </div>
-    </nav>
-    <header id="top">
-      <ul class="main-container flexbox">
-        <li class="flex-info intro">
-          <p class="hello">Hey! My name is Michelle.</p>
-          <p class="pre-animation">I'm <span class="animatedtext"></span></p>
-        </li>
-      </ul>
-    </header>
-    <div class="body-container">
-      <div id="about" class="anchor">
-        <ul class="about-content flexbox">
-          <li class="flex-info"><h1>About Me</h1></li>
-          <li class="flex-info">
-            <p>
-              I'm Michelle Liu, a first-year Information Systems student at
-              Carnegie Mellon University. I'm passionate about design, code, and
-              the intersections between art and technology. I love solving
-              challenging problems with code and hope to spread this love to
-              others through educational outreach.
-            </p>
-            <div class="faq">
-              <div class="faq-accordion">
-                <div class="accordion">Experience</div>
-                <div class="faq-panel">
-                  <ul>
-                    <li>
-                      Incoming Front-End Engineering Intern,
-                      <a href="https://www1.nyc.gov/assets/cto/#/" target="blank_"
-                        >NYC Mayor's Office of the CTO</a
-                      >
-                    </li> 
-                    <li>
-                      Innovation Team Member,
-                      <a href="https://www.tedxcmu.org/" target="blank_"
-                        >TEDxCMU</a
-                      >
-                    </li>
-                    <li>
-                      Software Developer, <a href="https://www.hcii.cmu.edu/">CMU Human-Computer Interaction Institute</a>
-                    </li>
-                    <li>
-                      Intern @ Johns Hopkins University, Applied Physics
-                      Laboratory (ASPIRE Program)
-                    </li>
-                    <li>
-                      Research Assistant, George Mason University, Volgenau School of
-                      Engineering (ASSIP Program)
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="faq-accordion">
-                <div class="accordion">Fun Facts</div>
-                <div class="faq-panel">
-                  <ul>
-                    <li>
-                      I love movies! My current favorites are Whiplash (2014),
-                      Before Sunset (2004), and Lady Bird (2017)
-                    </li>
-                    <li>I have 2 cats named Sugar and Cookie</li>
-                    <li>
-                      My current favorite fonts are Poppins and Proxima Nova
-                    </li>
-                    <li>
-                      I have over 100 Spotify playlists... check out my account
-                      <a
-                        href="https://open.spotify.com/user/kv9bz861mybb4364hwnjx4uip?si=1mCwj-66SnaL1ihLiW0r7g"
-                        target="blank_"
-                        >here</a
-                      >!
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+      <h3>Experience</h3>
+      <div class="intro">
+        <p><span class="intro__title"><a href="https://www1.nyc.gov/assets/cto/#/" target="_blank">NYC Mayor's Office of the CTO</a> / <a href="https://www.codingitforward.com/corps" target="_blank">Civic Innovation Corps</a></span><br />
+        Frontend Engineering Intern<br />
+        June 2021 - Present</p>
+
+        <p><span class="intro__title"><a href="https://www.tedxcmu.org/" target="_blank">TEDxCMU</a></span><br />
+          Innovation Team Member<br />
+          October 2020 - Present</p>
+
+        <p><span class="intro__title"><a href="https://github.com/CMUCTAT/CTAT/wiki" target="_blank">CMU HCI Institute</a></span><br />
+          Developer<br />
+          October 2020 - Present</p>
+
+        <p><span class="intro__title"><a href="https://rbc.jhuapl.edu/" target="_blank">JHU APL, Intelligent Systems Center</a></span><br />
+          Research Intern<br />
+          June 2018 - August 2018</p>
       </div>
-      <div id="work">
-        <ul class="about-content flexbox">
-          <li class="flex-info"><h1>Selected Projects</h1></li>
-          <ul class="projects">
-            <li>
-              <a href="receiptify.html">
-                <div class="card">
-                  <img src="media/receiptify-showcase.jpg" class="shrink" />
-                </div>
-                <h2>Receiptify</h2>
-                <h3>HTML, CSS, Node.js, Express.js</h3>
-                <p>
-                  Spotify extension that returns a user's most-played tracks in
-                  receipt form.
-                </p></a
-              >
-            </li>
-            <li>
-              <a href="https://catalyst.tedxcmu.org/" target="_blank">
-                <div class="card">
-                  <img src="media/tedx-showcase.jpg" class="shrink" />
-                </div>
-                <h2>TEDxCMU: Catalyst</h2>
-                <h3>Next.js, TypeScript, CSS Modules, Prismic</h3>
-                <p>
-                  A platform for TEDxCMU's first-ever virtual conference.
-                </p></a
-              >
-            </li>
-            <li>
-              <a href="journly.html">
-                <div class="card">
-                  <img src="media/journly-showcase.jpg" class="shrink" />
-                </div>
-                <h2>Journly</h2>
-                <h3>HTML, CSS, Node.js, Express.js, MongoDB</h3>
-                <p>
-                  An intelligent journal that helps you reflect on your daily
-                  thoughts and gain insights into your mental health.
-                </p></a
-              >
-            </li>
-            <li>
-              <a href="collabcove.html">
-                <div class="card">
-                  <img src="media/collabcove-showcase.jpg" class="shrink" />
-                </div>
-                <h2>CollabCove</h2>
-                <h3>HTML, CSS, JavaScript, PHP, SQL</h3>
-                <p>Web application designed to manage group projects.</p>
-              </a>
-            </li>
-          </ul>
-        </ul>
+      <div class="mobile">
+        <h3>Projects</h3>
+        <div class="projects">
+          <a href="https://receiptify.herokuapp.com/" target="_blank">Receiptify</a><br />
+          <a href="http://journlyapp.herokuapp.com/" target="_blank">Journly</a><br />
+          <a href="https://catalyst.tedxcmu.org/" target="_blank">Catalyst</a><br />
+          <a href="https://chrome.google.com/webstore/detail/modern-goodreads/ifbnfofjpbmnaennccominidogkogonm?hl=en&authuser=0" target="_blank">Modern Goodreads</a><br />
+        </div>
       </div>
-      <div id="contact">
-        <ul class="about-content flexbox">
-          <li class="flex-info"><h1>Contact</h1></li>
-          <li class="flex-info">
-            <p>
-              Let's talk! I love meeting and working with new people! I can be
-              reached by email at
-              <a href="mailto:mxliu@andrew.cmu.edu">mxliu@andrew.cmu.edu</a>.
-              Resume available upon request.
-            </p>
-          </li>
-        </ul>
+      <h3>More Information</h3>
+      <div class="contact">
+        <a href="mailto:mxliu@andrew.cmu.edu" target="_blank">Email</a>
+        <a href="https://github.com/michellexliu" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/mliu3259/" target="_blank">LinkedIn</a>
       </div>
-      <div class="spacing5"></div>
-      <div class="spacing5"></div>
     </div>
-    <footer>
-      <a href="mailto:mxliu@andrew.cmu.edu" target="_blank"
-        ><img src="media/icons/mailicon.png"
-      /></a>
-      <a
-        href="https://www.linkedin.com/in/michelle-l-51aa95187/"
-        target="_blank"
-        ><img src="media/icons/linkedin.png"
-      /></a>
-      <a href="https://github.com/michellexliu" target="_blank"
-        ><img src="media/icons/github.png"
-      /></a>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      type="text/javascript"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/faq.js"></script>
-    <script type="text/javascript" src="./slick/slick.js"></script>
-    <script type="text/javascript" src="js/type.js"></script>
-  </body>
+
+    <div class="wrapper">
+      <a href="https://receiptify.herokuapp.com/" target="_blank" class="item">
+        <div class="polaroid"><img src="media/receiptify-showcase.jpg" alt="receiptify website screencapture">
+          <div class="caption">Receiptify</div>
+        </div>
+      </a>
+    
+      <a href="http://journlyapp.herokuapp.com/" target="_blank" class="item">
+        <div class="polaroid"><img src="media/journly-showcase.jpg" alt="journly website screencapture">
+          <div class="caption">Journly</div>
+        </div>
+      </a>
+    
+      <a href="https://catalyst.tedxcmu.org/" target="_blank" class="item">
+        <div class="polaroid"><img src="media/tedx-showcase.jpg" alt="tedx website screencapture">
+          <div class="caption">Catalyst</div>
+        </div>
+      </a>
+    
+      <a href="https://chrome.google.com/webstore/detail/modern-goodreads/ifbnfofjpbmnaennccominidogkogonm?hl=en&authuser=0" target="_blank" class="item">
+        <div class="polaroid"><img src="media/gr-showcase.jpg" alt="modern goodreads project screencapture">
+          <div class="caption">Modern Goodreads</div>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</body>
 </html>
