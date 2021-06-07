@@ -87,12 +87,13 @@ a:hover {
   height: auto;
 }
 .caption {
-  font-family: Christopherhand, 'Helvetica Neue', helvetica, sans-serif;
+  font-family: 'Christopherhand', 'Helvetica Neue', helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 180%;
+  font-size: 175%;
   text-align: center;
-  line-height: 2.25em;
+  line-height: 1em;
+  padding: 0.5em 0vh;
 }
 .item {
   width: 30%;
