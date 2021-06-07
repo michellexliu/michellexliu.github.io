@@ -51,6 +51,12 @@ a:hover {
 .contact a {
   margin-right: 0.5vw;
 }
+.name {
+  margin-bottom: 0px;
+}
+.pronouns {
+  margin-top: 0px;
+}
 .wrapper {
   padding-left: 1vw;
   width: 70%;
@@ -66,8 +72,10 @@ a:hover {
 }
 .polaroid {
   background: #fff;
-  padding: 0.8rem;
+  padding: 0.93rem;
+  padding-top: 1.5rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.1);
+  border-radius: 5px;
 }
 .polaroid > img {
   max-width: 100%;
@@ -79,13 +87,18 @@ a:hover {
   font-weight: bold;
   font-size: 130%;
   text-align: center;
-  line-height: 2em;
+  line-height: 2.25em;
 }
 .item {
   width: 50%;
   display: inline-block;
   margin-top: 0rem;
-  /* filter: grayscale(100%); */
+}
+.item img {
+  filter: brightness(90%);
+}
+.item:hover img {
+  filter: brightness(100%);
 }
 .item .polaroid:before {
   content: '';
