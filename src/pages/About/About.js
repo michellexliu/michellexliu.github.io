@@ -14,7 +14,7 @@ export default function About() {
           />
         ))}
       ></Sidebar>
-      <div className="intro-container">
+      <div className="intro-container about-intro-container">
         <p className="heading">Hi, I'm Michelle.</p>
         <br />
         <p>

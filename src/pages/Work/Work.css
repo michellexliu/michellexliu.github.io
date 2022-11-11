@@ -40,4 +40,11 @@
   .project-images {
     width: 100%;
   }
+  .project-experience:hover {
+    color: black;
+    cursor: auto;
+  }
+  .project-experience:hover a {
+    color: black !important;
+  }
 }

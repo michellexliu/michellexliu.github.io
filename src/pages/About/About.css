@@ -19,6 +19,9 @@ ul {
   bottom: 0;
   width: 55%;
 }
+.intro-container.about-intro-container {
+  width: 90%;
+}
 .contact {
   padding-top: 3vh;
 }
