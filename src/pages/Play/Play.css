@@ -1,0 +1,23 @@
+.play-container {
+  padding-top: 4vh;
+  padding-right: 6vh;
+  overflow: auto;
+  position: fixed;
+  top: calc(5vh + 101px);
+  bottom: 0;
+}
+.play-gallery-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .play-container {
+    padding-right: 1.5vh;
+  }
+  .play-gallery-mobile {
+    display: block;
+  }
+  .play-gallery {
+    display: none;
+  }
+}

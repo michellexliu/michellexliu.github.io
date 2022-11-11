@@ -1,0 +1,43 @@
+.project-images {
+  display: flex;
+  width: 90%;
+}
+
+.project-images img {
+  max-height: 400px;
+  padding-right: 1vh;
+  object-fit: contain;
+}
+
+.project-experience:hover {
+  cursor: pointer;
+}
+
+.project-experience:hover {
+  color: var(--accent);
+}
+.project-experience:hover a {
+  color: var(--accent) !important;
+}
+
+.mobile-project-info {
+  display: none;
+  padding-top: 1.5vh;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-project-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .work .intro-container,
+  .work .project-summary {
+    display: none;
+  }
+  .work .sidebar-container {
+    border-top: none;
+  }
+  .project-images {
+    width: 100%;
+  }
+}

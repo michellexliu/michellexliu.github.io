@@ -1,0 +1,31 @@
+.sidebar-container {
+  border-right: 1px solid black;
+  width: 35%;
+  overflow: auto;
+  position: fixed;
+  top: calc(5vh + 101px);
+  bottom: 0;
+}
+
+.sidebar-item {
+  border-bottom: 1px solid black;
+  padding: 2vh 0;
+  padding-right: 1vw;
+}
+.sidebar-item:last-child {
+  border-bottom: none;
+}
+@media screen and (max-width: 768px) {
+  .sidebar-container {
+    width: 95%;
+    border-right: none;
+    position: static;
+    overflow: initial;
+    border-top: 1px solid black;
+  }
+  .intro-container {
+    overflow: initial;
+    position: static;
+    padding-bottom: 4vh;
+  }
+}
