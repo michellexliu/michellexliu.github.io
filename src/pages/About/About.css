@@ -19,9 +19,7 @@ ul {
   bottom: 0;
   width: 55%;
 }
-.intro-container.about-intro-container {
-  width: 90%;
-}
+
 .contact {
   padding-top: 3vh;
 }
@@ -52,5 +50,8 @@ ul {
   }
   .about .sidebar-container {
     order: 2;
+  }
+  .intro-container.about-intro-container {
+    width: 90%;
   }
 }
