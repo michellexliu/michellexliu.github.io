@@ -35,6 +35,15 @@ ul {
 .heading a {
   color: black;
 }
+.info-section {
+  display: flex;
+}
+.info-section img {
+  width: 35%;
+  object-fit: cover;
+  object-position: 90%;
+  padding-left: 2vw;
+}
 
 @media screen and (max-width: 768px) {
   .about {
@@ -53,5 +62,13 @@ ul {
   }
   .intro-container.about-intro-container {
     width: 90%;
+  }
+  .info-section {
+    flex-direction: column;
+  }
+  .info-section img {
+    width: 100%;
+    padding-top: 5vh;
+    padding-left: 0px;
   }
 }
