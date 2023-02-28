@@ -1,7 +1,7 @@
-import React from "react";
-import "./About.css";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import EXPERIENCE from "../../assets/experience";
+import React from 'react';
+import './About.css';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import EXPERIENCE from '../../assets/experience';
 
 export default function About() {
   return (
@@ -10,7 +10,7 @@ export default function About() {
         items={EXPERIENCE.map((exp) => (
           <Experience
             {...exp}
-            dates={[exp.dates.start, exp.dates.end ?? "Present"]}
+            dates={[exp.dates.start, exp.dates.end ?? 'Present']}
           />
         ))}
       ></Sidebar>
@@ -41,25 +41,25 @@ export default function About() {
         <br />
         <p>Things I want to learn more about:</p>
         <ul>
-          <li>Infrastructure as code</li>
           <li>Physical prototyping</li>
           <li>Data visualization</li>
-          <li>Photography</li>
+          <li>Film photography</li>
           <li>Latte art</li>
           <li>Art history</li>
+          <li>Mixology</li>
         </ul>
         <br />
         <p>Things I enjoy:</p>
         <ul>
           <li>
-            Curating{" "}
+            Curating{' '}
             <a
               href="https://open.spotify.com/user/kv9bz861mybb4364hwnjx4uip?si=0b9d05c54a114e3e"
               target="_blank"
               rel="noreferrer"
             >
               Spotify playlists
-            </a>{" "}
+            </a>{' '}
             (I have over 100!)
           </li>
           <li>Functional programming</li>
@@ -85,7 +85,7 @@ function Experience({ name, dates, description, position, link }) {
         <a href={link} target="_blank" rel="noreferrer">
           <b>{name}</b>
         </a>
-        <p className="experience-dates">{dates.join("-")}</p>
+        <p className="experience-dates">{dates.join('-')}</p>
       </div>
       <p className="experience-position">{position}</p>
       <p>{description}</p>

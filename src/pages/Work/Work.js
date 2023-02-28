@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import "./Work.css";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import WORK from "../../assets/work";
+import React, { useState } from 'react';
+import './Work.css';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import WORK from '../../assets/work';
 
 export default function Work() {
   const [active, setActive] = useState(0);
@@ -15,7 +15,11 @@ export default function Work() {
       ></Sidebar>
       <div className="intro-container">
         <p className="heading">
-          <a href={WORK[active].link}>{WORK[active].name}</a>
+          {WORK[active].link ? (
+            <a href={WORK[active].link}>{WORK[active].name}</a>
+          ) : (
+            WORK[active].name
+          )}
         </p>
         <br />
         <div className="project-images">
