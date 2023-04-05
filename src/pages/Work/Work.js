@@ -1,55 +1,68 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import './Work.css';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import WORK from '../../assets/work';
 
 export default function Work() {
-  const [active, setActive] = useState(0);
+  const itemRefs = useRef([]);
 
   return (
     <div className="about work">
       <Sidebar
         items={WORK.map((work, index) => (
-          <Project key={work.name} {...work} onClick={() => setActive(index)} />
+          <Project
+            projId={work.name.replace(' ', '_')}
+            key={work.name}
+            {...work}
+            onClick={() =>
+              itemRefs.current[index].scrollIntoView({ behavior: 'smooth' })
+            }
+          />
         ))}
       ></Sidebar>
       <div className="intro-container">
-        <p className="heading">
-          {WORK[active].link ? (
-            <a href={WORK[active].link}>{WORK[active].name}</a>
-          ) : (
-            WORK[active].name
-          )}
-        </p>
-        <br />
-        <div className="project-images">
-          {WORK[active].images.map((img, index) => (
-            <img
-              src={`images/${img}`}
-              alt={`${WORK[active].name} number ${index}`}
-              style={{ maxWidth: `${100 / WORK[active].images.length}%` }}
-              key={`${WORK[active].name} number ${index}`}
-            />
-          ))}
-        </div>
-        <br />
-        <div
-          dangerouslySetInnerHTML={{ __html: WORK[active].description }}
-        ></div>
-        <br />
-        <br />
+        {WORK.map((work, index) => (
+          <div ref={(el) => (itemRefs.current[index] = el)}>
+            <br />
+            <p className="heading" id={work.name.replace(' ', '_')}>
+              {work.link ? <a href={work.link}>{work.name}</a> : work.name}
+            </p>
+            <br />
+            <div className="project-images">
+              {work.images.map((img, index) => (
+                <img
+                  src={`images/${img}`}
+                  alt={`${work.name} number ${index}`}
+                  style={{ maxWidth: `${100 / work.images.length}%` }}
+                  key={`${work.name} number ${index}`}
+                />
+              ))}
+            </div>
+            <br />
+            <div dangerouslySetInnerHTML={{ __html: work.description }}></div>
+            <br />
+            <br />
+          </div>
+        ))}
       </div>
     </div>
   );
 }
 
-function Project({ name, date, link, onClick, summary, images, description }) {
+function Project({
+  projId,
+  name,
+  date,
+  link,
+  onClick,
+  summary,
+  images,
+  description,
+}) {
   return (
     <div className="experience-container project-experience" onClick={onClick}>
       <div className="experience-header">
-        <a href={link} target="_blank" rel="noreferrer">
-          <b>{name}</b>
-        </a>
+        <b>{name}</b>
         <p className="experience-dates">{date}</p>
       </div>
       <p className="project-summary">{summary}</p>
