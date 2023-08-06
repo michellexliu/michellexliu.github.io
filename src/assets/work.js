@@ -14,8 +14,18 @@ const WORK = [
     link: 'https://receiptify.herokuapp.com/',
   },
   {
+    name: 'Phone Holder / Alarm',
+    images: ['phone_holder.jpeg', 'phone_holder-3.jpeg'],
+    description:
+      "<p>For this project, we were tasked to create an assistive device for a client with a disability. Our class focuses on small electronics and interaction, so we had to find a way to use those skills to create a device that would helpful for our client, Darnisha. Over the course of six weeks, we met with Darnisha, designed prototypes, tested prototypes, and finally created the final product.</p><br /><p>In our interviews, we found that Darnisha sometimes forgets where she puts her phone down throughout the day, and also has trouble reaching over to turn off the alarm in the morning. Our solution was a wheelchair attachment that lights up when the phone is not in the holder to remind Darnisha to keep her phone with her. The device also doubles as an alarm clock that turns off via motion sensing, so that Darnisha doesn't need to press any buttons or get up to grab anything.</p>",
+    summary:
+      'A wheelchair attachment that doubles as an alarm and phone reminder.',
+    date: '05.2023',
+    link: 'https://courses.ideate.cmu.edu/60-223/s2023/work/phone-holder-and-alarm-by-team-peaches-final-documentation/',
+  },
+  {
     name: 'Morii AR Filters',
-    images: ['xiaoshi_cropped.gif'],
+    images: ['xiaoshi_cropped.gif', 'DSC_0354.jpg'],
     description:
       "<p>A set of 13 AR filters, designed and developed to show off each of the 13 fashion lines for Lunar Gala's 2023 Morii show. When a filter is activated, users can point their camera at the corresponding page for a line to view a 3D model of the line.</p>",
     summary: 'AR filter experience, designed for the Lunar Gala Morii booklet.',

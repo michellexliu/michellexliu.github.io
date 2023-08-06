@@ -1,12 +1,23 @@
 const EXPERIENCE = [
   {
+    name: 'Bloomberg',
+    dates: {
+      start: '05.2023',
+      end: '08.2023',
+    },
+    description:
+      'Developed a resource center for professors and content management features for administrators in the Bloomberg for Education portal.',
+    position: 'Software Engineer Intern',
+    link: 'https://www.bloomberg.com/',
+  },
+  {
     name: 'Autolab',
     dates: {
       start: '09.2021',
     },
     description:
       'Designing & building new features for an open-source course management system that allows professors to autograde student programming assignments— in any language, using any software package, instantly.',
-    position: 'Project Lead',
+    position: 'Software Developer, Former Team Lead',
     link: 'https://autolabproject.com/',
   },
   {
@@ -16,13 +27,14 @@ const EXPERIENCE = [
     },
     description:
       'Creating interactive projects for the TEDxCMU board and its events, using technology as a medium to share stories and create meaningful experiences.',
-    position: 'Head of Innovation',
+    position: 'Member, Former Head of Innovation',
     link: 'https://www.tedxcmu.org/',
   },
   {
     name: 'Lunar Gala',
     dates: {
       start: '10.2021',
+      end: '04.2023',
     },
     description:
       "Building online experiences to promote Pittsburgh's largest fashion show.",
@@ -33,6 +45,7 @@ const EXPERIENCE = [
     name: 'CoEx Lab',
     dates: {
       start: '09.2022',
+      end: '12.2022',
     },
     description:
       'Researching and developing a platform to help bridge the gender gap in the Open-Source Software community.',
@@ -48,7 +61,7 @@ const EXPERIENCE = [
     description:
       'Developed tools to help employees save, recall, and discover knowledge artifacts as a member of the Recall team.',
     position: 'Software Engineer Intern',
-    link: 'https://autolabproject.com/',
+    link: 'https://about.meta.com/',
   },
   {
     name: "NYC Mayor's Office of the CTO",

@@ -38,16 +38,16 @@ export default function About() {
               <li>Projection mapping</li>
               <li>Rapid prototyping</li>
               <li>Interaction design</li>
-              <li>Skateboarding (I can almost do an ollie!)</li>
+              <li>Mobile development</li>
               <li>Cooking</li>
+              <li>Physical prototyping</li>
             </ul>
             <br />
             <p>Things I want to learn more about:</p>
             <ul>
-              <li>Physical prototyping</li>
               <li>Data visualization</li>
+              <li>Distributed systems</li>
               <li>Film photography</li>
-              <li>Latte art</li>
               <li>Art history</li>
               <li>Mixology</li>
             </ul>
