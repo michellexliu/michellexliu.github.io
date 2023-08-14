@@ -1,16 +1,5 @@
 const EXPERIENCE = [
   {
-    name: 'Bloomberg',
-    dates: {
-      start: '05.2023',
-      end: '08.2023',
-    },
-    description:
-      'Developed a resource center for professors and content management features for administrators in the Bloomberg for Education portal.',
-    position: 'Software Engineer Intern',
-    link: 'https://www.bloomberg.com/',
-  },
-  {
     name: 'Autolab',
     dates: {
       start: '09.2021',
@@ -31,13 +20,24 @@ const EXPERIENCE = [
     link: 'https://www.tedxcmu.org/',
   },
   {
+    name: 'Bloomberg',
+    dates: {
+      start: '05.2023',
+      end: '08.2023',
+    },
+    description:
+      'Developed a resource center for professors and content management features for administrators in the Bloomberg for Education portal.',
+    position: 'Software Engineer Intern',
+    link: 'https://www.bloomberg.com/',
+  },
+  {
     name: 'Lunar Gala',
     dates: {
       start: '10.2021',
       end: '04.2023',
     },
     description:
-      "Building online experiences to promote Pittsburgh's largest fashion show.",
+      "Built online and AR experiences to promote Pittsburgh's largest fashion show.",
     position: 'Web Developer',
     link: 'https://lunargala.org/',
   },
@@ -48,7 +48,7 @@ const EXPERIENCE = [
       end: '12.2022',
     },
     description:
-      'Researching and developing a platform to help bridge the gender gap in the Open-Source Software community.',
+      'Researched ways to bridge the gender gap in the Open-Source Software community.',
     position: 'Research Assistant',
     link: 'http://coexlab.com/',
   },
