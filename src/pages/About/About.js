@@ -29,8 +29,9 @@ export default function About() {
             <p>
               I enjoy working on creative web tools and creating engaging
               experiences through technology. Currently, I'm most interested in
-              educational technology, multi-disciplinary art installations, and
-              human-AI interaction.
+              working on educational technology, examining how we can facilitate
+              social connection through data, and building interactive
+              experiences with technology.
             </p>
             <br />
             <p>Things I'm exploring right now:</p>
