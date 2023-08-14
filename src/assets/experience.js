@@ -27,7 +27,7 @@ const EXPERIENCE = [
     },
     description:
       'Creating interactive projects for the TEDxCMU board and its events, using technology as a medium to share stories and create meaningful experiences.',
-    position: 'Member (Prev, Head of Innovation)',
+    position: 'Advisor (Prev, Head of Innovation)',
     link: 'https://www.tedxcmu.org/',
   },
   {
