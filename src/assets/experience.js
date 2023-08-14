@@ -17,7 +17,7 @@ const EXPERIENCE = [
     },
     description:
       'Designing & building new features for an open-source course management system that allows professors to autograde student programming assignments— in any language, using any software package, instantly.',
-    position: 'Software Developer, Former Team Lead',
+    position: 'Software Developer (Prev, Team Lead)',
     link: 'https://autolabproject.com/',
   },
   {
@@ -27,7 +27,7 @@ const EXPERIENCE = [
     },
     description:
       'Creating interactive projects for the TEDxCMU board and its events, using technology as a medium to share stories and create meaningful experiences.',
-    position: 'Member, Former Head of Innovation',
+    position: 'Member (Prev, Head of Innovation)',
     link: 'https://www.tedxcmu.org/',
   },
   {
