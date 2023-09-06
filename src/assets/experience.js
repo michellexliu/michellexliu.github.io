@@ -1,5 +1,15 @@
 const EXPERIENCE = [
   {
+    name: 'Somewhere Somehow',
+    dates: {
+      start: '09.2023',
+    },
+    description:
+      'Building a social platform that deepens connections that matter to you.',
+    position: 'Full-Stack Software Engineer',
+    link: 'https://joinswsh.com',
+  },
+  {
     name: 'Autolab',
     dates: {
       start: '09.2021',

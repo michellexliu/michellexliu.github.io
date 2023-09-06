@@ -125,7 +125,7 @@ const WORK = [
   },
   {
     name: 'Catalyst',
-    images: ['catalyst.jpg'],
+    images: ['catalyst.jpg', 'tedx_ticket.png'],
     description:
       "<p>Website developed to promote the 2021 TEDxCMU main event, created in collaboration with the TEDxCMU design and innovation teams. This was built in the midst of the pandemic, where in-person events weren't yet feasible. To create a more engaging experience for users, we built Catalyst as a virtual event platform, complete with a sign-in system and ticket generation.</p>",
     summary: 'TEDxCMU 2021 event website.',
