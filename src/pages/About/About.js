@@ -24,6 +24,15 @@ export default function About() {
               I study Information Systems at Carnegie Mellon University, with
               minors in Computer Science and Human-Computer Interaction. I'm
               originally from Maryland and am currently based in Pittsburgh.
+              Right now, I'm helping build{' '}
+              <a
+                href="https://www.joinswsh.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                swsh
+              </a>
+              , a social media platform for friends, not followers.
             </p>
             <br />
             <p>
