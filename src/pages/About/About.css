@@ -9,26 +9,39 @@ ul {
 .experience-position {
   color: var(--body-grey);
 }
+
 .intro-container {
-  padding-top: 4vh;
-  padding-right: 6vh;
+  padding-top: 3vh;
   overflow: auto;
   position: fixed;
-  top: calc(5vh + 101px);
+  top: calc(5vh + 51px);
   left: calc(35% + 4vw);
+  right: 3vw;
   bottom: 0;
-  width: 55%;
+}
+
+.about-intro-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.pic {
+  width: 40%;
+  object-fit: cover;
+  padding-right: 2vw;
+  object-position: 70%;
 }
 
 .contact {
   padding-top: 3vh;
 }
-.intro-container .contact a {
-  color: var(--accent);
-  text-decoration: underline;
+.contact a {
   padding-right: 2vw;
 }
-.intro-container a {
+.intro-container a,
+.contact a {
   color: var(--body-grey);
   text-decoration: underline;
 }
@@ -38,11 +51,13 @@ ul {
 .info-section {
   display: flex;
   margin-bottom: 5vh;
+  align-items: center;
 }
 .info-section img {
-  width: 35%;
+  height: 40vh;
+  width: 40vh;
   object-fit: cover;
-  object-position: 90%;
+  object-position: 70%;
   padding-left: 2vw;
 }
 
@@ -51,25 +66,25 @@ ul {
     display: flex;
     overflow: auto;
     position: fixed;
-    top: calc(5vh + 101px);
+    top: calc(5vh + 51px);
     bottom: 0;
     flex-direction: column;
   }
   .about .intro-container {
-    order: 1;
+    order: 2;
   }
   .about .sidebar-container {
-    order: 2;
+    order: 1;
   }
   .intro-container.about-intro-container {
     width: 90%;
+    flex-direction: column;
   }
   .info-section {
     flex-direction: column;
   }
-  .info-section img {
+  .pic {
     width: 100%;
-    padding-top: 5vh;
-    padding-left: 0px;
+    padding-bottom: 5vh;
   }
 }

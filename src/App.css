@@ -1,11 +1,14 @@
+@import url(https://db.onlinewebfonts.com/c/17241fb9c2ffb3ec11eba762e771435f?family=Suisse+Int%27l+Book);
+
 :root {
   --dark-grey: #384853;
   --body-grey: #8b949d;
+  --body-grey-lighter: #868a8ead;
   --accent: #0000ff;
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Suisse Int'l Boo", Helvetica, Arial, sans-serif;
   width: 100%;
 }
 

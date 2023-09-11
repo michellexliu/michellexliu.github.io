@@ -1,12 +1,79 @@
+.description {
+  padding-top: 3vh;
+  padding-bottom: 1vh;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.experience-container {
+  padding-right: 1vw;
+}
+
+.bio {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.section-header {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.projects-header {
+  padding-bottom: 1vh;
+  border-bottom: 1px solid black;
+}
+
+.pt-6 {
+  padding-top: 6vh;
+}
+
+.project-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: center;
+  border-collapse: collapse; /* Add this line */
+  padding: 1vh 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 2vh;
+}
+
+.project-links p {
+  padding-bottom: 2px;
+  transition: all 0.25s ease;
+}
+
+.project-links p:hover,
+.selected-project {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: bolder;
+}
+
 .project-images {
+  transition: all 0.25s ease;
   display: flex;
-  width: 90%;
+  width: 100%;
+}
+
+.project-images:hover {
+  opacity: 0.7;
 }
 
 .project-images img {
   max-height: 400px;
   padding-right: 1vh;
-  object-fit: contain;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-heading {
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding-top: 3vh;
 }
 
 .project-experience:hover {
@@ -30,15 +97,15 @@
     display: flex;
     flex-direction: column;
   }
-  .work .intro-container,
-  .work .project-summary {
+  .project-links,
+  .projects-container {
     display: none;
   }
   .work .sidebar-container {
     border-top: none;
   }
   .project-images {
-    width: 100%;
+    width: 95%;
   }
   .project-experience:hover {
     color: black;

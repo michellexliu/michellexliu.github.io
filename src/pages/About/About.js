@@ -7,65 +7,57 @@ import me from '../../assets/me.jpg';
 export default function About() {
   return (
     <div className="about">
-      <Sidebar
-        items={EXPERIENCE.map((exp) => (
-          <Experience
-            {...exp}
-            dates={[exp.dates.start, exp.dates.end ?? 'Present']}
-          />
-        ))}
-      ></Sidebar>
       <div className="intro-container about-intro-container">
-        <p className="heading">Hi, I'm Michelle.</p>
-        <br />
-        <div className="info-section">
-          <div className="text">
-            <p>
-              I study Information Systems at Carnegie Mellon University, with
-              minors in Computer Science and Human-Computer Interaction. I'm
-              originally from Maryland and am currently based in Pittsburgh.
-              Right now, I'm helping build{' '}
-              <a
-                href="https://www.joinswsh.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                swsh
-              </a>
-              , a social media platform for friends, not followers.
-            </p>
-            <br />
-            <p>
-              I enjoy working on creative web tools and creating engaging
-              experiences through technology. Currently, I'm most interested in
-              working on educational technology, examining how we can facilitate
-              social connection through data, and building interactive
-              experiences with technology.
-            </p>
-            <br />
-            <p>Things I'm exploring right now:</p>
-            <ul>
-              <li>Projection mapping</li>
-              <li>Rapid prototyping</li>
-              <li>Interaction design</li>
-              <li>Mobile development</li>
-              <li>Cooking</li>
-              <li>Physical prototyping</li>
-            </ul>
-            <br />
-            <p>Things I want to learn more about:</p>
-            <ul>
-              <li>Data visualization</li>
-              <li>Distributed systems</li>
-              <li>Film photography</li>
-              <li>Art history</li>
-              <li>Mixology</li>
-            </ul>
-            <br />
-            <p>Things I enjoy:</p>
-            <ul>
-              <li>
-                Curating{' '}
+        <img src={me} className="pic" alt="a headshot of me!" />
+        <div>
+          <p className="heading">Hi, I'm Michelle.</p>
+          <br />
+          <p>
+            I'm currently studying{' '}
+            <i>
+              Information Systems, Computer Science, and Human-Computer
+              Interaction
+            </i>{' '}
+            at Carnegie Mellon University. I'm originally from Maryland and am
+            currently based in Pittsburgh.
+          </p>
+          <br />
+          <p>
+            Right now, I'm helping build{' '}
+            <a
+              href="https://www.joinswsh.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              swsh
+            </a>
+            , a social media platform for friends, not followers.
+          </p>
+          <br />
+          <p>
+            I enjoy working on creative web tools and creating engaging
+            experiences through technology. I'm most interested in working on
+            educational technology and examining how we can facilitate social
+            connection through data.
+          </p>
+          <div className="info-section">
+            <div className="text">
+              <br />
+              <p>
+                <b>Things I'm exploring right now:</b> projection mapping,
+                mobile development, physical prototyping, cooking,
+                entrepeneuership
+              </p>
+              <br />
+              <p>
+                <b>Things I want to learn more about:</b> data visualization,
+                distributed systems, film photography, art history, mixology,
+                WebGL, Three.js, dj-ing, gender studies, film, philosophy,
+                LLM's, drumming
+              </p>
+              <br />
+              <p>
+                <b>Things I enjoy:</b> curating{' '}
                 <a
                   href="https://open.spotify.com/user/kv9bz861mybb4364hwnjx4uip?si=0b9d05c54a114e3e"
                   target="_blank"
@@ -73,38 +65,55 @@ export default function About() {
                 >
                   Spotify playlists
                 </a>{' '}
-                (I have over 100!)
-              </li>
-              <li>Functional programming</li>
-              <li>Indie rock</li>
-              <li>0.5x lens selfies</li>
-              <li>Cold brew</li>
-              <li>Watching the leaves turn red in the fall</li>
-            </ul>
-            <div className="contact">
-              <a href="mailto:michelleliu@cmu.edu">Email</a>
-              <a href="https://github.com/michellexliu">GitHub</a>
-              <a href="https://www.linkedin.com/in/mliu3259/">LinkedIn</a>
+                (I have over 100!), bouldering, functional programming, indie
+                rock, waking up with the sun, cold brew, watching leaves turn
+                red in the fall, horror movies, watching the swans and geese
+                near my neighborhood pond at sunset, running on the West Side
+                Highway
+              </p>
+              <br />
+              <p>
+                <b>Current favorites:</b>
+              </p>
+              <ul>
+                <li>
+                  <b>Movies</b>: <i>Before Sunset</i>, <i>Whiplash</i>,{' '}
+                  <i>Aftersun</i>, <i>Short Term 12</i>, <i>Moonlight</i>
+                </li>
+                <li>
+                  <b>Books</b>: <i>Writers & Lovers</i> by Lily King,{' '}
+                  <i>In the Dream House</i> by Carmen Maria Machado,{' '}
+                  <i>Either / Or</i> by Elif Batuman,{' '}
+                  <i>The Remains of the Day</i> by Kazuo Ishiguro,{' '}
+                  <i>Another Country</i> by James Baldwin
+                </li>
+                <li>
+                  <b>Artists</b>: Elliott Smith, Boygenius, Alice Phoebe Lou,
+                  Bright Eyes, Mac Miller
+                </li>
+                <li>
+                  <b>Shows</b>: The Haunting of Hill House, Masterchef, Dead to
+                  Me, Bojack Horseman, The Last of Us
+                </li>
+                <li>
+                  <b>Places</b>: Copenhagen, the golf course next to my house (I
+                  don't actually golf, just trespass), Amsterdam, Target in the
+                  suburbs, Gantry Plaza State Park, Flagstaff hill
+                </li>
+              </ul>
+              <div className="contact">
+                <a href="mailto:michelleliu@cmu.edu">Email</a>
+                <a href="https://github.com/michellexliu">GitHub</a>
+                <a href="https://www.linkedin.com/in/mliu3259/">LinkedIn</a>
+                <a href="https://www.instagram.com/mchelle.liu/">Instagram</a>
+                <a href="https://open.spotify.com/user/kv9bz861mybb4364hwnjx4uip?si=1326e0649403470e">
+                  Spotify
+                </a>
+              </div>
             </div>
           </div>
-          <img src={me} className="pic" alt="a headshot of me!" />
         </div>
       </div>
-    </div>
-  );
-}
-
-function Experience({ name, dates, description, position, link }) {
-  return (
-    <div className="experience-container">
-      <div className="experience-header">
-        <a href={link} target="_blank" rel="noreferrer">
-          <b>{name}</b>
-        </a>
-        <p className="experience-dates">{dates.join('-')}</p>
-      </div>
-      <p className="experience-position">{position}</p>
-      <p>{description}</p>
     </div>
   );
 }

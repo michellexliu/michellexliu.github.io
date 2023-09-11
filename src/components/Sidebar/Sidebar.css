@@ -3,12 +3,13 @@
   width: 35%;
   overflow: auto;
   position: fixed;
-  top: calc(5vh + 101px);
+  top: calc(5vh + 51px);
   bottom: 0;
 }
 
 .sidebar-item {
-  border-bottom: 1px solid black;
+  width: 95%;
+  border-bottom: 1px solid var(--body-grey-lighter);
   padding: 2vh 0;
   padding-right: 1vw;
 }
