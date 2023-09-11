@@ -43,7 +43,7 @@ export default function Work() {
             <a href="mailto:michelleliu@cmu.edu">Email</a>
             <a href="https://github.com/michellexliu">GitHub</a>
             <a href="https://www.linkedin.com/in/mliu3259/">LinkedIn</a>
-            <a href="https://www.instagram.com/mchelle.liu/">Instagram</a>
+            <a href="https://www.instagram.com/michellexyliu_/">Instagram</a>
             <a href="https://open.spotify.com/user/kv9bz861mybb4364hwnjx4uip?si=1326e0649403470e">
               Spotify
             </a>
