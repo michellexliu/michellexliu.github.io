@@ -29,15 +29,7 @@ export default function Work() {
               Information Systems / Computer Science / Human-Computer
               Interaction
             </i>{' '}
-            @ Carnegie Mellon University & building @{' '}
-            <a
-              href="https://www.joinswsh.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Somewhere Somehow
-            </a>
-            .
+            @ Carnegie Mellon University.
           </p>
           <div className="contact">
             <a href="mailto:michelleliu@cmu.edu">Email</a>

@@ -23,15 +23,11 @@ export default function About() {
           </p>
           <br />
           <p>
-            Right now, I'm helping build{' '}
-            <a
-              href="https://www.joinswsh.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              swsh
-            </a>
-            , a social media platform for friends, not followers.
+            Right now, I'm enjoying some time off after graduating, spending
+            some time traveling, experimenting, building, spending time with
+            friends, etc. Currently working on an ed-tech startup, aiming to
+            improve literacy in children through story. Feel to reach out if
+            you're interested in learning more about it!
           </p>
           <br />
           <p>
@@ -44,9 +40,9 @@ export default function About() {
             <div className="text">
               <br />
               <p>
-                <b>Things I'm exploring right now:</b> projection mapping,
+                <b>Things I'm exploring right now: </b>
                 mobile development, physical prototyping, cooking,
-                entrepeneuership
+                entrepeneuership, film photography
               </p>
               <br />
               <p>

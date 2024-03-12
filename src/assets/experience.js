@@ -3,6 +3,7 @@ const EXPERIENCE = [
     name: 'Somewhere Somehow',
     dates: {
       start: '09.2023',
+      end: '12.2023',
     },
     description:
       'Building a social platform that deepens connections that matter to you.',
@@ -13,6 +14,7 @@ const EXPERIENCE = [
     name: 'Autolab',
     dates: {
       start: '09.2021',
+      end: '12.2023',
     },
     description:
       'Designing & building new features for an open-source course management system that allows professors to autograde student programming assignments— in any language, using any software package, instantly.',
@@ -23,6 +25,7 @@ const EXPERIENCE = [
     name: 'TEDxCMU',
     dates: {
       start: '10.2020',
+      end: '05.2023',
     },
     description:
       'Creating interactive projects for the TEDxCMU board and its events, using technology as a medium to share stories and create meaningful experiences.',
