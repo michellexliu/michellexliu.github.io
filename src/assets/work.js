@@ -10,6 +10,15 @@ const WORK = [
     link: 'https://receiptify.herokuapp.com/',
   },
   {
+    name: 'Muse',
+    images: ['muse.png'],
+    description:
+      'Muse is an ecosystem for storytelling, world building, and multi-modal play. Along with my friends <a href="https://yoursemily.com" target="_blank">Emily</a> and <a href="https://www.designbybryce.com/" target="_blank">Bryce</a>, I spent the summer working on an iPad app that allows children to create their own stories and worlds. Our goal was to enable kids to meaningfully engage with technology through active creativity, worldbuilding, and immersive reading experiences. With Muse, content is truly made for kids, by kids.<br /><br />Today, Muse has been released in a public beta. While I am no longer actively working on Muse, Bryce and Emily have continued to add exciting new features and are now working on a conversational AI plush toy that serves as a companion to the app and takes after any characters in its stories',
+    summary: '<p>Technology to empower creative, curious children</p>',
+    date: '03.2024-08.2024',
+    link: 'https://joinmuse.ai/',
+  },
+  {
     name: 'Device for Darnisha',
     images: ['phone_holder.jpeg', 'phone_holder-3.jpeg'],
     description:
@@ -18,15 +27,6 @@ const WORK = [
       'A wheelchair attachment that doubles as an alarm and phone reminder.',
     date: '05.2023',
     link: 'https://courses.ideate.cmu.edu/60-223/s2023/work/phone-holder-and-alarm-by-team-peaches-final-documentation/',
-  },
-  {
-    name: 'Morii AR Filters',
-    images: ['xiaoshi_cropped.gif', 'DSC_0354.jpg'],
-    description:
-      "<p>A set of 13 AR filters, designed and developed to show off each of the 13 fashion lines for Lunar Gala's 2023 Morii show. When a filter is activated, users can point their camera at the corresponding page for a line to view a 3D model of the line.</p>",
-    summary: 'AR filter experience, designed for the Lunar Gala Morii booklet.',
-    date: '03.2023',
-    link: 'https://www.instagram.com/lunargala/',
   },
   {
     name: 'Morii',

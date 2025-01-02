@@ -1,7 +1,5 @@
 import React from 'react';
 import './About.css';
-import Sidebar from '../../components/Sidebar/Sidebar';
-import EXPERIENCE from '../../assets/experience';
 import me from '../../assets/me.jpg';
 
 export default function About() {
@@ -13,21 +11,14 @@ export default function About() {
           <p className="heading">Hi, I'm Michelle.</p>
           <br />
           <p>
-            I'm currently studying{' '}
+            I recently graduated from Carnegie Mellon University, where I
+            studied{' '}
             <i>
               Information Systems, Computer Science, and Human-Computer
               Interaction
-            </i>{' '}
-            at Carnegie Mellon University. I'm originally from Maryland and am
-            currently based in Pittsburgh.
-          </p>
-          <br />
-          <p>
-            Right now, I'm enjoying some time off after graduating, spending
-            some time traveling, experimenting, building, spending time with
-            friends, etc. Currently working on an ed-tech startup, aiming to
-            improve literacy in children through story. Feel to reach out if
-            you're interested in learning more about it!
+            </i>
+            . I'm originally from Maryland and am currently based in New York
+            City.
           </p>
           <br />
           <p>
@@ -41,8 +32,8 @@ export default function About() {
               <br />
               <p>
                 <b>Things I'm exploring right now: </b>
-                mobile development, physical prototyping, cooking,
-                entrepeneuership, film photography
+                mobile development, physical prototyping, cooking, ceramics,
+                film photography
               </p>
               <br />
               <p>
@@ -74,7 +65,7 @@ export default function About() {
               <ul>
                 <li>
                   <b>Movies</b>: <i>Before Sunset</i>, <i>Whiplash</i>,{' '}
-                  <i>Aftersun</i>, <i>Short Term 12</i>, <i>Moonlight</i>
+                  <i>Drive My Car</i>, <i>Short Term 12</i>, <i>Saving Face</i>
                 </li>
                 <li>
                   <b>Books</b>: <i>Writers & Lovers</i> by Lily King,{' '}
@@ -84,17 +75,16 @@ export default function About() {
                   <i>Another Country</i> by James Baldwin
                 </li>
                 <li>
-                  <b>Artists</b>: Elliott Smith, Boygenius, Alice Phoebe Lou,
-                  Bright Eyes, Mac Miller
+                  <b>Artists</b>: Elliott Smith, Joni Mitchell, Patsy Cline,
+                  Janis Ian, Jockstrap
                 </li>
                 <li>
                   <b>Shows</b>: The Haunting of Hill House, Masterchef, Dead to
                   Me, Bojack Horseman, The Last of Us
                 </li>
                 <li>
-                  <b>Places</b>: Copenhagen, the golf course next to my house (I
-                  don't actually golf, just trespass), Amsterdam, Target in the
-                  suburbs, Gantry Plaza State Park, Flagstaff hill
+                  <b>Places</b>: Copenhagen, the golf course next to my house,
+                  Amsterdam, Flagstaff hill, Gantry Plaza State Park
                 </li>
               </ul>
               <div className="contact">

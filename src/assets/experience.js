@@ -1,14 +1,13 @@
 const EXPERIENCE = [
   {
-    name: 'Somewhere Somehow',
+    name: 'Bloomberg',
     dates: {
-      start: '09.2023',
-      end: '12.2023',
+      start: '08.2024',
     },
     description:
-      'Building a social platform that deepens connections that matter to you.',
-    position: 'Full-Stack Software Engineer',
-    link: 'https://joinswsh.com',
+      'Working on the Bloomberg Connects team, creating features to enhance visitor experiences at museums, galleries, and other cultural institutions.',
+    position: 'Software Engineer',
+    link: 'https://bloombergconnects.org/',
   },
   {
     name: 'Autolab',
@@ -17,7 +16,7 @@ const EXPERIENCE = [
       end: '12.2023',
     },
     description:
-      'Designing & building new features for an open-source course management system that allows professors to autograde student programming assignments— in any language, using any software package, instantly.',
+      'Designed & built new features for an open-source course management system that allows professors to autograde student programming assignments— in any language, using any software package, instantly.',
     position: 'Software Developer (Prev, Team Lead)',
     link: 'https://autolabproject.com/',
   },
@@ -28,7 +27,7 @@ const EXPERIENCE = [
       end: '05.2023',
     },
     description:
-      'Creating interactive projects for the TEDxCMU board and its events, using technology as a medium to share stories and create meaningful experiences.',
+      'Created interactive projects for the TEDxCMU board and its events, using technology as a medium to share stories and create meaningful experiences.',
     position: 'Advisor (Prev, Head of Innovation)',
     link: 'https://www.tedxcmu.org/',
   },
