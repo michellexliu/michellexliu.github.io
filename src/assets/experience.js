@@ -1,5 +1,15 @@
 const EXPERIENCE = [
   {
+    name: 'Ramp',
+    dates: {
+      start: '05.2025',
+    },
+    description:
+      'Working on the product platform team— building surfaces for cross-cutting initiatives, such as homepage, comments, and early access experiments.',
+    position: 'Software Engineer',
+    link: 'https://ramp.com/',
+  },
+  {
     name: 'Bloomberg',
     dates: {
       start: '08.2024',
