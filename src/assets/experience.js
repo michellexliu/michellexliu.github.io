@@ -5,7 +5,7 @@ const EXPERIENCE = [
       start: '05.2025',
     },
     description:
-      'Working on the product platform team— building surfaces for cross-cutting initiatives, such as homepage, comments, and early access experiments.',
+      'Working on product foundations / procurement orchestration frontend',
     position: 'Software Engineer',
     link: 'https://ramp.com/',
   },
@@ -13,6 +13,7 @@ const EXPERIENCE = [
     name: 'Bloomberg',
     dates: {
       start: '08.2024',
+      end: '05.2025',
     },
     description:
       'Working on the Bloomberg Connects team, creating features to enhance visitor experiences at museums, galleries, and other cultural institutions.',
